@@ -1,0 +1,44 @@
+# Dependencies
+**/node_modules/
+**/.venv/
+**/env/
+**/venv/
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+**/.env
+
+# Build and Output
+**/.next/
+**/out/
+**/build/
+**/dist/
+**/*.egg-info/
+**/.pytest_cache/
+**/.coverage
+**/htmlcov/
+
+# IDE and System Files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# ML Models (Optional: ignore if they are large artifacts)
+# **/models/*.pkl
+
+# Logs
+*.log
+**/logs/
