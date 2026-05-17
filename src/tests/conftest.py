@@ -57,6 +57,9 @@ class FakeModelService:
             message="Prediction generated successfully.",
             data=PredictionData(
                 predicted_price=19.07,
+                confidence_interval=13.11,
+                lower_bound=5.96,
+                upper_bound=32.18,
                 model_name="car_price_model.pkl",
                 explanation={
                     "summary": "The predicted price is primarily driven by Horsepower.",

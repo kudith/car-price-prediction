@@ -7,8 +7,8 @@ export const SITE_CONFIG = {
   name: "CarPredict",
   tagline: "Data-Driven Vehicle Valuation",
   description:
-    "A vehicle price prediction system developed as a Final Project (UAS) for the Data Science course, leveraging Linear Regression and CRISP-DM.",
-  author: "Sains Data - UAS Project",
+    "A vehicle price prediction system developed as a Final Project for the Data Science course, leveraging Linear Regression and CRISP-DM.",
+  author: "Data Science - Final Project",
   url: "/",
 } as const
 

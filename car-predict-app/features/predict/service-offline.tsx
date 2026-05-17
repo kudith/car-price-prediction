@@ -13,7 +13,7 @@ export function ServiceOffline() {
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] as const }}
         className="mb-8 rounded-full bg-destructive/5 p-8"
       >
         <WifiOff className="h-16 w-16 text-destructive" />

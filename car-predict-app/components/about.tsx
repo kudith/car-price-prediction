@@ -81,7 +81,7 @@ export function AboutContent() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 1.4, ease: [0.16, 1, 0.3, 1] },
+      transition: { duration: 1.4, ease: [0.16, 1, 0.3, 1] as const },
     },
   }
 
@@ -92,9 +92,9 @@ export function AboutContent() {
       transition: {
         x: {
           repeat: Infinity,
-          repeatType: "loop",
+          repeatType: "loop" as const,
           duration: 45,
-          ease: "linear",
+          ease: "linear" as const,
         },
       },
     },
@@ -106,9 +106,9 @@ export function AboutContent() {
       transition: {
         x: {
           repeat: Infinity,
-          repeatType: "loop",
+          repeatType: "loop" as const,
           duration: 45,
-          ease: "linear",
+          ease: "linear" as const,
         },
       },
     },
@@ -420,7 +420,7 @@ export function AboutContent() {
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
-                    transition={{ delay: idx * 0.15, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+                    transition={{ delay: idx * 0.15, duration: 0.8, ease: [0.16, 1, 0.3, 1] as const }}
                   >
                     <Badge className="text-[16px] uppercase font-bold tracking-[0.15em] py-3 px-10 shadow-2xl bg-foreground text-background hover:scale-110 hover:-rotate-1 transition-all duration-500">
                       {t}

@@ -32,7 +32,7 @@ export function Navbar() {
     <motion.header
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+      transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] as const }}
       className={cn(
         "fixed right-0 left-0 z-50 mx-auto w-full px-4 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] md:px-8",
         isScrolled ? "top-4 max-w-7xl" : "top-0 max-w-full"
@@ -138,7 +138,7 @@ export function Navbar() {
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] as const }}
             className="absolute top-20 right-4 left-4 z-40 overflow-hidden rounded-md border border-border/80 bg-background/70 p-6 shadow-xl backdrop-blur-xl md:hidden"
           >
             <div className="flex flex-col space-y-4 rounded-md">

@@ -37,4 +37,15 @@ export const predictionSchema = z.object({
     .max(60, "Fuel_efficiency cannot exceed 60"),
 })
 
-export type PredictionPayload = z.infer<typeof predictionSchema>
+export interface PredictionPayload {
+  Manufacturer: string;
+  Vehicle_type: string;
+  Engine_size: number;
+  Horsepower: number;
+  Wheelbase: number;
+  Width: number;
+  Length: number;
+  Curb_weight: number;
+  Fuel_capacity: number;
+  Fuel_efficiency: number;
+}

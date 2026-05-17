@@ -47,7 +47,7 @@ export function PredictionForm() {
     reset,
     control,
     formState: { errors },
-  } = useForm<PredictionPayload>({
+  } = useForm({
     resolver: zodResolver(predictionSchema),
     defaultValues: {
       Manufacturer: "",
@@ -63,8 +63,8 @@ export function PredictionForm() {
     },
   })
 
-  const onSubmit = async (data: PredictionPayload) => {
-    await submitPrediction(data)
+  const onSubmit = async (data: any) => {
+    await submitPrediction(data as PredictionPayload)
   }
 
   const handleReset = () => {
