@@ -4,6 +4,7 @@ import sys
 from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
+from fastapi.middleware.cors import CORSMiddleware
 from slowapi.errors import RateLimitExceeded
 
 if __package__ in {None, ""}:
@@ -18,6 +19,14 @@ app = FastAPI(
     title=settings.app_name,
     version=settings.app_version,
     description="API prediksi harga mobil berbasis model Linear Regression.",
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 app.state.limiter = limiter

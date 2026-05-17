@@ -54,7 +54,7 @@ export function Footer() {
             >
               <li>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/kudith/car-price-prediction"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group inline-flex items-center gap-1.5 font-light text-muted-foreground transition-colors hover:text-foreground"
@@ -66,7 +66,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://colab.research.google.com"
+                  href="https://colab.research.google.com/drive/1jW3XulM4pnXyzBEbwOdJeKih0gSjROee?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group inline-flex items-center gap-1.5 font-light text-muted-foreground transition-colors hover:text-foreground"
