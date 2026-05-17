@@ -93,19 +93,27 @@ curl -X POST http://localhost:8000/api/v1/predict \
   }'
 ```
 
-## Docker Usage
+## Deployment Options
 
-### Build and Run
+### Option 1: Vercel (Recommended for Monorepos)
+The API is configured to run as a Vercel Serverless Function using `vercel.json`.
 
+1. Create a new project in Vercel and link this repository.
+2. Set the **Root Directory** to `src`.
+3. Add the `API_KEY` environment variable in the Vercel dashboard.
+4. Deploy.
+
+### Option 2: Render
+1. Create a **Web Service** in Render.
+2. Set the **Root Directory** to `src`.
+3. **Build Command**: `pip install -r requirements.txt`
+4. **Start Command**: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
+5. Add the `API_KEY` environment variable.
+
+### Option 3: Docker
 ```bash
 docker build -t car-price-api .
 docker run --rm -p 8000:8000 --env-file .env car-price-api
-```
-
-### Docker Compose
-
-```bash
-docker-compose up --build
 ```
 
 ## Testing
