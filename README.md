@@ -20,8 +20,8 @@ The repository is organized into four main components:
 To explore or run the project, please refer to the documentation in the subdirectories:
 
 1. Data Science Workflow: See the [Google Colab Notebook](https://colab.research.google.com/drive/1jW3XulM4pnXyzBEbwOdJeKih0gSjROee?usp=sharing) for the model development process.
-2. Backend API: See src/README.md for server setup and API documentation.
-3. Frontend Application: See car-predict-app/README.md for web interface setup.
+2. Backend API: See [src/README.md](src/README.md) for server setup and API documentation.
+3. Frontend Application: See [car-predict-app/README.md](car-predict-app/README.md) for web interface setup.
 
 ## Technical Stack
 
